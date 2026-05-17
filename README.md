@@ -1,111 +1,139 @@
-🚀 ReceiptIQ — AI-Powered Finance Management App
+# 🚀 ReceiptIQ — AI-Powered Finance Management App
 
-ReceiptIQ is a modern personal finance web application that helps users track expenses, manage budgets, and improve financial habits using AI-powered tools and smart automation.
+ReceiptIQ is a modern AI-powered personal finance platform that helps users track expenses, manage budgets, and improve financial habits through smart automation and real-time financial insights.
 
-✨ Main Features
-📷 Scan receipts using AI-powered OCR
-🤖 Chat with an AI financial assistant powered by Gemini
-🎯 Set savings goals and get personalized financial tips
-📊 View spending insights with interactive charts
-📄 Export financial reports as PDFs with AI-generated summaries
-🌗 Dark and light mode support
-📱 Progressive Web App (PWA) with offline support
-🔐 Secure authentication and protected routes
-🎨 Explore smart budget templates
-🗺️ Interactive onboarding for new users
-🛡️ Role-based admin dashboard
-📧 Newsletter subscription system
-❓ FAQ, contact, and privacy pages
-🌟 Unique Highlights
-🤖 Smart AI Assistant
+---
 
-An AI-powered assistant that analyzes spending habits, detects unusual expenses, and provides personalized financial suggestions.
+## ✨ Features
 
-🎯 AI Goal Coaching
+- 📷 AI-powered receipt scanning with OCR
+- 🤖 Gemini-powered AI financial assistant
+- 🎯 Savings goal tracking with personalized AI coaching
+- 📊 Interactive financial dashboard with charts
+- 📄 AI-generated PDF financial reports
+- 🌗 Dark & light mode support
+- 📱 Progressive Web App (PWA) support
+- 🔐 Secure authentication & protected routes
+- 🎨 Smart budget template explorer
+- 🗺️ Interactive onboarding flow
+- 🛡️ Role-based admin dashboard
+- 📧 Newsletter subscription system
+- ❓ FAQ, contact, and privacy pages
 
-Users can create financial goals and receive customized guidance based on their real spending behavior.
+---
 
-📄 AI PDF Reports
+# 🌟 Unique Highlights
 
+## 🤖 Smart AI Assistant
+An intelligent AI assistant that analyzes spending habits, detects unusual expenses, and provides personalized financial recommendations.
+
+## 🎯 AI Goal Coaching
+Users can create financial goals and receive customized guidance based on real spending behavior.
+
+## 📄 AI PDF Reports
 Generate professional financial reports with AI-written monthly summaries.
 
-⚡ High Performance
+## ⚡ High Performance
+Built with Next.js 16, Turbopack, and PWA support for fast loading and offline functionality.
 
-Built with Next.js 16, Turbopack, and PWA support for fast performance and offline functionality.
+## 🎨 Premium User Experience
+Smooth animations and responsive interactions powered by GSAP, Framer Motion, and Lenis.
+
+---
+
+# 🏗️ Project Structure
+
+```bash
 ReceiptIQ-frontend/
-├── public/                     # Static assets & PWA manifest
+├── public/
 │   └── screenshot.png
 │
 ├── src/
-│   ├── app/                    # Next.js App Router
-│   │   ├── about/              # About us & mission page
-│   │   ├── contact/            # Contact page with RHF + Zod
-│   │   ├── dashboard/          # Protected dashboard area
-│   │   │   ├── admin/          # Admin-only panel
-│   │   │   ├── goals/          # Goal tracking & coaching
-│   │   │   ├── profile/        # User profile management
-│   │   │   ├── receipts/       # Receipt upload & history
-│   │   │   ├── layout.tsx      # Dashboard shell layout
-│   │   │   └── page.tsx        # Main dashboard page
-│   │   ├── explore/            # Budget template explorer
-│   │   ├── privacy-policy/     # Legal / privacy page
-│   │   ├── globals.css         # Global styles & CSS variables
-│   │   ├── layout.tsx          # Root layout with providers
-│   │   ├── not-found.tsx       # Custom 404 page
-│   │   ├── page.tsx            # Landing page (Hero + sections)
-│   │   └── providers.tsx       # App-wide React providers
+│   ├── app/
+│   │   ├── about/
+│   │   ├── contact/
+│   │   ├── dashboard/
+│   │   │   ├── admin/
+│   │   │   ├── goals/
+│   │   │   ├── profile/
+│   │   │   ├── receipts/
+│   │   │   ├── layout.tsx
+│   │   │   └── page.tsx
+│   │   ├── explore/
+│   │   ├── privacy-policy/
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── not-found.tsx
+│   │   ├── page.tsx
+│   │   └── providers.tsx
 │   │
 │   ├── components/
-│   │   ├── features/           # Landing page section components
-│   │   │   ├── AgenticChat.tsx
-│   │   │   ├── CTABanner.tsx
-│   │   │   ├── FAQ.tsx
-│   │   │   ├── FinancialOnboardingModal.tsx
-│   │   │   ├── GameChangingFeatures.tsx
-│   │   │   ├── GoalCoach.tsx
-│   │   │   ├── HowItWorks.tsx
-│   │   │   ├── ImpactMetrics.tsx
-│   │   │   ├── Newsletter.tsx
-│   │   │   ├── PlatformCapabilities.tsx
-│   │   │   ├── SmartFeatures.tsx
-│   │   │   └── Testimonials.tsx
-│   │   ├── providers/          # Context providers (Lenis, Theme, Query)
-│   │   ├── shared/             # Navbar, Footer, shared UI
-│   │   └── ui/                 # shadcn/ui base components
+│   │   ├── features/
+│   │   ├── providers/
+│   │   ├── shared/
+│   │   └── ui/
 │   │
-│   ├── data/                   # Static data & mock content
-│   ├── hooks/                  # Custom React hooks
-│   │   ├── useChat.ts          # AI chat state management
-│   │   ├── useDebounce.ts      # Input debouncing
-│   │   ├── useGoals.ts         # Goals CRUD
-│   │   ├── useReceipts.ts      # Receipts data fetching
-│   │   └── useSettings.ts      # User settings
+│   ├── data/
+│   ├── hooks/
 │   └── lib/
-│       ├── auth-client.ts      # better-auth browser client
-│       └── utils.ts            # cn() + utility helpers
 │
-├── .env.local                  # Local environment variables
-├── next.config.ts              # Next.js + PWA + API rewrite config
-├── tailwind.config.ts          # Tailwind CSS v4 config
-├── tsconfig.json               # TypeScript config
+├── .env.local
+├── next.config.ts
+├── tailwind.config.ts
+├── tsconfig.json
 └── package.json
+```
 
-🎨 Premium User Experience
+---
 
-Smooth animations and responsive design using GSAP, Framer Motion, and Lenis.
+# 🛠️ Tech Stack
 
-🛠️ Tech Stack
-Category	Technology
-Frontend	Next.js 16, TypeScript
-Styling	Tailwind CSS v4, shadcn/ui
-State Management	Zustand, TanStack Query
-Authentication	better-auth
-Forms & Validation	React Hook Form, Zod
-Charts	Recharts
-AI	Google Gemini API
-Animation	GSAP, Framer Motion, Lenis
-PWA	next-pwa
-Deployment	Vercel & Render
-💼 Recruiter-Friendly Summary
+| Category | Technology |
+|---|---|
+| Frontend | Next.js 16, TypeScript |
+| Styling | Tailwind CSS v4, shadcn/ui |
+| State Management | Zustand, TanStack Query |
+| Authentication | better-auth |
+| Forms & Validation | React Hook Form, Zod |
+| Charts | Recharts |
+| AI | Google Gemini API |
+| Animation | GSAP, Framer Motion, Lenis |
+| PWA | next-pwa |
+| Deployment | Vercel & Render |
 
-Built ReceiptIQ, an AI-powered personal finance platform that allows users to scan receipts, track expenses, manage savings goals, and receive AI-driven financial insights. Developed using Next.js 16, TypeScript, Tailwind CSS, Zustand, TanStack Query, and Google Gemini API with a strong focus on performance, scalability, and user experience.
+---
+
+# 💼 Recruiter-Friendly Summary
+
+Built **ReceiptIQ**, an AI-powered personal finance platform that enables users to scan receipts, track expenses, manage savings goals, and receive AI-driven financial insights. Developed using **Next.js 16**, **TypeScript**, **Tailwind CSS**, **Zustand**, **TanStack Query**, and **Google Gemini API** with a strong focus on scalability, performance, and premium user experience.
+
+---
+
+# ⚙️ Installation
+
+```bash
+# Clone the repository
+git clone <your-repository-url>
+
+# Navigate into the project
+cd ReceiptIQ-frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+# 🌐 Deployment
+
+- Frontend: Vercel
+- Backend: Render
+
+---
+
+# 📄 License
+
+This project is licensed under the MIT License.
