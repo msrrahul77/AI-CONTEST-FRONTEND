@@ -32,6 +32,63 @@ Generate professional financial reports with AI-written monthly summaries.
 ⚡ High Performance
 
 Built with Next.js 16, Turbopack, and PWA support for fast performance and offline functionality.
+ReceiptIQ-frontend/
+├── public/                     # Static assets & PWA manifest
+│   └── screenshot.png
+│
+├── src/
+│   ├── app/                    # Next.js App Router
+│   │   ├── about/              # About us & mission page
+│   │   ├── contact/            # Contact page with RHF + Zod
+│   │   ├── dashboard/          # Protected dashboard area
+│   │   │   ├── admin/          # Admin-only panel
+│   │   │   ├── goals/          # Goal tracking & coaching
+│   │   │   ├── profile/        # User profile management
+│   │   │   ├── receipts/       # Receipt upload & history
+│   │   │   ├── layout.tsx      # Dashboard shell layout
+│   │   │   └── page.tsx        # Main dashboard page
+│   │   ├── explore/            # Budget template explorer
+│   │   ├── privacy-policy/     # Legal / privacy page
+│   │   ├── globals.css         # Global styles & CSS variables
+│   │   ├── layout.tsx          # Root layout with providers
+│   │   ├── not-found.tsx       # Custom 404 page
+│   │   ├── page.tsx            # Landing page (Hero + sections)
+│   │   └── providers.tsx       # App-wide React providers
+│   │
+│   ├── components/
+│   │   ├── features/           # Landing page section components
+│   │   │   ├── AgenticChat.tsx
+│   │   │   ├── CTABanner.tsx
+│   │   │   ├── FAQ.tsx
+│   │   │   ├── FinancialOnboardingModal.tsx
+│   │   │   ├── GameChangingFeatures.tsx
+│   │   │   ├── GoalCoach.tsx
+│   │   │   ├── HowItWorks.tsx
+│   │   │   ├── ImpactMetrics.tsx
+│   │   │   ├── Newsletter.tsx
+│   │   │   ├── PlatformCapabilities.tsx
+│   │   │   ├── SmartFeatures.tsx
+│   │   │   └── Testimonials.tsx
+│   │   ├── providers/          # Context providers (Lenis, Theme, Query)
+│   │   ├── shared/             # Navbar, Footer, shared UI
+│   │   └── ui/                 # shadcn/ui base components
+│   │
+│   ├── data/                   # Static data & mock content
+│   ├── hooks/                  # Custom React hooks
+│   │   ├── useChat.ts          # AI chat state management
+│   │   ├── useDebounce.ts      # Input debouncing
+│   │   ├── useGoals.ts         # Goals CRUD
+│   │   ├── useReceipts.ts      # Receipts data fetching
+│   │   └── useSettings.ts      # User settings
+│   └── lib/
+│       ├── auth-client.ts      # better-auth browser client
+│       └── utils.ts            # cn() + utility helpers
+│
+├── .env.local                  # Local environment variables
+├── next.config.ts              # Next.js + PWA + API rewrite config
+├── tailwind.config.ts          # Tailwind CSS v4 config
+├── tsconfig.json               # TypeScript config
+└── package.json
 
 🎨 Premium User Experience
 
